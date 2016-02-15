@@ -1,0 +1,15 @@
+# mac stuff
+.DS_Store
+
+
+# php storm
+.idea
+
+
+# wonder why does sass need a cache folder
+.sass-cache
+
+
+# personal stuff
+.scss-lint.yml
+node_modules
