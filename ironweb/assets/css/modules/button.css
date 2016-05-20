@@ -1,0 +1,25 @@
+.btn {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: "Lato", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 4px;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  -ms-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear; }
+  .btn.btn-primary {
+    background-color: #398ccc;
+    border-color: #398ccc; }
+    .btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active {
+      background-color: #266393; }
+  .btn.btn-success {
+    background-color: #5b882d;
+    border-color: #5b882d; }
+    .btn.btn-success:hover, .btn.btn-success:focus, .btn.btn-success:active {
+      background-color: #416220; }
+  .btn.btn-lg {
+    padding-right: 30px;
+    padding-left: 30px; }
