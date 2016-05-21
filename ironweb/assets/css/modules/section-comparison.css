@@ -38,7 +38,9 @@
     margin: 0 auto; } }
 
 @media (max-width: 479px) {
-  .comparison .definition-list {
-    margin-right: auto;
-    margin-left: auto;
-    float: none; } }
+  .comparison {
+    padding-top: 60px; }
+    .comparison .definition-list {
+      margin-right: auto;
+      margin-left: auto;
+      float: none; } }
