@@ -1,8 +1,8 @@
 .btn {
   text-transform: uppercase;
-  font-size: 20px;
   font-family: "Lato", Helvetica, Roboto, Arial, sans-serif;
   font-weight: 700;
+  font-size: 15px;
   color: #fff;
   border-radius: 4px;
   -webkit-transition: background-color 0.2s linear;
@@ -22,4 +22,5 @@
       background-color: #416220; }
   .btn.btn-lg {
     padding-right: 30px;
-    padding-left: 30px; }
+    padding-left: 30px;
+    font-size: 20px; }
