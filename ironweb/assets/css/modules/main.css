@@ -39,6 +39,9 @@ li {
 .text-light {
   font-weight: 300; }
 
+.section-dark {
+  background-color: #f4f4f4; }
+
 .logo {
   display: block;
   width: 186px;
