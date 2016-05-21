@@ -1,0 +1,14 @@
+.section-pricing {
+  padding: 80px 0 120px; }
+  .section-pricing .pricing-column {
+    margin-top: 60px; }
+    .section-pricing .pricing-column .checklist {
+      min-height: 508px; }
+
+@media (max-width: 768px) {
+  .section-pricing {
+    padding-bottom: 60px; }
+    .section-pricing .pricing-column h6 {
+      height: 100px;
+      line-height: 100px;
+      font-size: 20px; } }
