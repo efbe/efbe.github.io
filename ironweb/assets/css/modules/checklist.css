@@ -1,0 +1,22 @@
+.checklist {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  .checklist li {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    font-weight: 300;
+    font-size: 20px;
+    color: #5a5a5a; }
+    .checklist li:before {
+      content: ' ';
+      display: block;
+      width: 20px;
+      height: 15px;
+      position: absolute;
+      top: 7px;
+      left: 0;
+      background: no-repeat url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAAcElEQVR42qXNwQmAMAyF4bqDW3UcUQ92DC92DQfU9hAo/aE0vMC75IUvoZ11e5eaIEyPPSU3UAH7agxVsGyYBy39XnL1y2jIECV2NHepL9McSkxCgTHRi56DPttTB+rDiOoYUR0jqmNEdYyojhGdwX7wyCHukHv/KAAAAABJRU5ErkJggg==); }
+  .checklist.success li:before {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAAeUlEQVR42qXPwQ2AIBBEUenGu2VQj3oQu/AizSommk82kTBw+KfdvGSGcZ/y3NvQmsXO1NGDWux66kE/LIJJ6JzaLOhBJHTJ/oKdHEQUjAKggoIRecA6dC3cY8qBVaFljMldKBhgOwpWBkEVDFBHwXQQtIwBCijYXzf7e2rABq3jHAAAAABJRU5ErkJggg==); }
