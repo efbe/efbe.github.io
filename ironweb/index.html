@@ -143,13 +143,38 @@
         </section>
 
 
-        <!-- Carousel section
+        <!-- Carousel section -->
         <section class="section-carousel section-highlight">
             <div class="container">
-                [this one is for tomorrow]
+                <div id="carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <h4>Nos clients parlent <span class="text-light">de nous</span></h4>
+                            <p>J'avais besoin de refaire mon passeport en urgence suite à une perte, mon Assistant Administratif m'a permis
+                                de remplir la demande et de rassembler toutes les pièces justificatives en seulement 30 minutes.
+                                Grâce à l'Assistant Particulier j'ai pu rejoindre mes proches au Brésil 10 jours plus tard !</p>
+                            <p><strong>Camille, 36 ans</strong></p>
+                        </div>
+                        <div class="item">
+                            <h4><span class="text-light">The</span> Walrus</h4>
+                            <p>The walrus (Odobenus rosmarus) is a large flippered marine mammal with a discontinuous distribution
+                            about the North Pole in the Arctic Ocean and subarctic seas of the Northern Hemisphere. The walrus is
+                            the only living species in the family Odobenidae and genus Odobenus.</p>
+                            <p><strong>Wikipedia</strong></p>
+                        </div>
+                    </div>
+
+                    <a href="#carousel" class="left carousel-control" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a href="#carousel" class="right carousel-control" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
         </section>
-        -->
 
 
         <!-- Service section -->
@@ -299,8 +324,10 @@
     <script type="text/javascript" charset="utf-8" src="assets/js/libs/jquery.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="assets/js/libs/carousel.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
-           // $('.carousel').carousel()
+        $(document).ready(function() {
+           $('.carousel').carousel({
+               interval: 10000
+           });
         });
     </script>
 </body>
