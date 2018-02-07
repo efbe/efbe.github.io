@@ -1,0 +1,619 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+  	<!-- custom font -->
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Oswald:300,400" rel="stylesheet">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    
+    <title>Balázs Foky // Front End Developer</title>
+    
+    <style type="text/css">
+      .wrapper {
+        width: 100%;
+      }
+
+      #outlook a {
+        padding: 0;
+      }
+
+      body {
+        width: 100% !important;
+        min-width: 100%;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        margin: 0;
+        Margin: 0;
+        padding: 0;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      .ExternalClass {
+        width: 100%;
+      }
+
+      .ExternalClass,
+      .ExternalClass p,
+      .ExternalClass span,
+      .ExternalClass font,
+      .ExternalClass td,
+      .ExternalClass div {
+        line-height: 100%;
+      }
+
+      img {
+        outline: none;
+        text-decoration: none;
+        -ms-interpolation-mode: bicubic;
+        width: auto;
+        max-width: 100%;
+        clear: both;
+        display: block;
+      }
+
+      center {
+        width: 100%;
+        min-width: 580px;
+      }
+
+      table {
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+
+      td {
+        word-wrap: break-word;
+        border-collapse: collapse !important;
+      }
+
+      table, tr, td {
+        padding: 0;
+        vertical-align: top;
+        text-align: left;
+      }
+
+      @media only screen {
+        html {
+          min-height: 100%;
+          background: #f6f6f6
+        }
+      }
+
+      table.body {
+        background: #f6f6f6;
+        height: 100%;
+        width: 100%;
+      }
+
+      table.container {
+        background: #fefefe;
+        width: 580px;
+        margin: 0 auto;
+        Margin: 0 auto;
+        text-align: inherit;
+      }
+
+      table.row {
+        padding: 0;
+        width: 100%;
+        position: relative;
+      }
+
+      table.spacer {
+        width: 100%;
+      }
+
+      table.spacer td {
+        mso-line-height-rule: exactly;
+      }
+
+      table.container table.row {
+        display: table;
+      }
+
+      td.columns,
+      th.columns {
+        margin: 0 auto;
+        Margin: 0 auto;
+        padding-left: 16px;
+        padding-bottom: 16px;
+      }
+
+      td.columns.last,
+      th.columns.last {
+        padding-right: 16px;
+      }
+
+      td.columns table:not(.button),
+      th.columns table:not(.button) {
+        width: 100%;
+      }
+
+      td.large-3,
+      th.large-3,
+      td.large-4,
+      th.large-4,
+      td.large-5,
+      th.large-5,
+      td.large-6,
+      th.large-6,
+      td.large-7,
+      th.large-7,
+      td.large-8,
+      th.large-8,
+      td.large-12,
+      th.large-12 {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+
+      td.large-3,
+      th.large-3 {
+        width: 129px;
+      }
+
+      td.large-4,
+      th.large-4 {
+        width: 177.33333px;
+      }
+
+      td.large-5,
+      th.large-5 {
+        width: 225.66667px;
+      }
+
+      td.large-6,
+      th.large-6 {
+        width: 274px;
+      }
+
+      td.large-7,
+      th.large-7 {
+        width: 322.33333px;
+      }
+
+      td.large-8,
+      th.large-8 {
+        width: 370.66667px;
+      }
+
+      td.large-12,
+      th.large-12 {
+        width: 564px;
+      }
+
+      td.large-3.first,
+      th.large-3.first,
+      td.large-4.first,
+      th.large-4.first,
+      td.large-5.first,
+      th.large-5.first,
+      td.large-6.first,
+      th.large-6.first,
+      td.large-7.first,
+      th.large-7.first,
+      td.large-8.first,
+      th.large-8.first,
+      td.large-12.first,
+      th.large-12.first {
+        padding-left: 16px;
+      }
+
+      td.large-3.last,
+      th.large-3.last,
+      td.large-4.last,
+      th.large-4.last,
+      td.large-5.last,
+      th.large-5.last,
+      td.large-6.last,
+      th.large-6.last,
+      td.large-7.last,
+      th.large-7.last,
+      td.large-8.last,
+      th.large-8.last,
+      td.large-12.last,
+      th.large-12.last {
+        padding-right: 16px;
+      }
+
+      td.large-4 center,
+      th.large-4 center {
+        min-width: 145.33333px;
+      }
+
+      td.large-5 center,
+      th.large-5 center {
+        min-width: 193.66667px;
+      }
+
+      .collapse > tbody > tr > td.large-12,
+      .collapse > tbody > tr > th.large-12 {
+        padding-right: 0;
+        padding-left: 0;
+      }
+
+      @media only screen and (max-width: 596px) {
+        .small-float-center {
+          margin: 0 auto !important;
+          float: none !important;
+          text-align: center !important;
+        }
+      }
+
+      table.float-center,
+      td.float-center,
+      th.float-center,
+      img.float-center {
+        margin: 0 auto;
+        Margin: 0 auto;
+        float: none;
+        text-align: center;
+      }
+
+      body,
+      table.body,
+      h1,
+      h2,
+      p,
+      td,
+      th,
+      a {
+        color: #252525;
+        font-family: Oswald, sans-serif;
+        font-weight: 300;
+        padding: 0;
+        margin: 0;
+        Margin: 0;
+        text-align: left;
+        line-height: 1.5;
+      }
+
+      h1,
+      h2 {
+        color: inherit;
+        word-wrap: normal;
+        font-family: 'Fjalla One', sans-serif;
+        font-weight: 400;
+        margin-bottom: 10px;
+        Margin-bottom: 10px;
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+
+      body,
+      table.body,
+      p,
+      td,
+      th {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      table.button {
+        width: auto;
+        margin: 0 0 0 0;
+        Margin: 0 0 0 0;
+        border-radius: 2px;
+      }
+
+      table.button table td {
+        text-align: left;
+        color: #fff;
+        background: #299ecf;
+        border: 0;
+        border-radius: 2px;
+      }
+
+      table.button table td a {
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        padding: 12px 24px 12px 24px;
+        border: 0 solid #299ecf;
+        border-radius: 2px;
+        white-space: nowrap;
+      }
+
+      table.button:hover table tr td a,
+      table.button:active table tr td a,
+      table.button table tr td a:visited {
+        color: #fff;
+      }
+
+      table.button:hover table td,
+      table.button:visited table td,
+      table.button:active table td {
+        background: #258eba;
+        color: #fff;
+      }
+
+      table.button.expand {
+        width: 100% !important;
+      }
+
+      body.outlook p {
+        display: inline !important;
+      }
+
+      @media only screen and (max-width: 596px) {
+        table.body center {
+          min-width: 0 !important;
+        }
+
+        table.body .container {
+          width: 95% !important;
+        }
+
+        table.body .columns  {
+          height: auto !important;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          padding-left: 16px !important;
+          padding-right: 16px !important;
+        }
+
+        table.body .column .columns,
+        table.body .collapse .columns {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+
+        td.small-12,
+        th.small-12 {
+          display: inline-block !important;
+          width: 100% !important;
+        }
+
+        .columns td.small-12,
+        .columns th.small-12 {
+          display: block !important;
+          width: 100% !important;
+        }
+      }
+
+      body,
+      html,
+      .body {
+        background: #f6f6f6 !important;
+      }
+
+      a {
+        color: #299ecf;
+        text-decoration: underline;
+      }
+
+      .container.header {
+        background: #f3f3f3;
+      }
+
+      .header {
+        background: #299ecf;
+      }
+
+      .header .columns {
+        padding-bottom: 0;
+      }
+
+      .header p {
+        color: #fff;
+        margin-bottom: 0;
+        Margin-bottom: 0;
+      }
+
+      .header .wrapper-inner {
+        padding: 24px 12px 24px 12px;
+      }
+
+      .header .container {
+        background: transparent;
+      }
+
+      table.footer .menu td {
+        padding: 12px 12px 12px 12px;
+      }
+
+      table.footer .menu-item {
+        padding: 0 12px 0 12px;
+      }
+    </style>
+
+  </head>
+
+
+
+  <body>
+    <table class="body">
+      <tr>
+        <td class="center" align="center" valign="top">
+          <center>
+
+            <!-- header -->
+            <table align="center" class="wrapper header float-center" style="background: #299ecf;">
+              <tr><td class="wrapper-inner">
+                <table align="center" class="container">
+                  <tbody>
+                    <tr><td>
+                      <table class="row collapse"><tbody>
+                        <tr>
+                          <th class="small-12 large-12 columns first last">
+                            <p style="font-family: 'Fjalla One', sans-serif; font-weight: 400; font-size: 24px;">
+                              Hi, I'm Balázs
+                            </p>
+                          </th>
+                        </tr>
+                      </tbody></table>
+                    </td></tr>
+                  </tbody>
+                </table>
+              </td></tr>
+            </table>
+
+            <!-- main container -->
+            <table align="center" class="container float-center"><tbody><tr><td>
+
+
+              <table class="spacer"><tbody><tr>
+                <td height="32px" style="font-size:32px;line-height:32px;">&#xA0;</td>
+              </tr></tbody></table>
+
+              <!-- About me -->
+              <table class="row"><tbody><tr>
+                <td class="small-12 large-3 columns first"><table><tr><td>
+                  <img class="small-float-center" src="assets/efbe-150.jpg" alt="Balázs">
+                </td></tr></table></td>
+                <td class="small-12 large-9 columns last"><table><tr>
+                  <p style="margin-bottom: 24px;">I am a Front End developer currently working for a London-based company remotely
+                    from Budapest, Hungary.</p>
+                  <p style="margin-bottom: 8px;">In my spare time I do regular stuff like
+                    <a style="color: #299ecf; text-decoration: underline;" href="https://www.flickr.com/photos/balazsfoky/">taking
+                    pictures</a> while travelling around, binge watching Netflix series, playing basketball, hiking and even
+                    compiling <a style="color: #299ecf; text-decoration: underline;" href="https://mixcloud.com/efbe/">music into
+                    mixes</a> from rough Colombian cumbia to good old British drum&amp;bass.</p>
+                </td></tr></table></td>
+              </tr></tbody></table>
+              <table class="row"><tbody><tr>
+                <td class="small-12 large-12 columns first last"><table><tr><td>
+                  <p>At work I love to tinker around with everything that is connected to HTML &amp; CSS from small splash sites
+                  to complex design systems and yeah, even emails as well. I've collected some highlights from the last 10 years,
+                  you can read about them by hitting that big blue button below.</p>
+                </td></tr></table></td>
+              </tr></tbody></table>
+              <table class="spacer"><tbody><tr>
+                <td height="16px" style="font-size:16px;line-height:16px;">&#xA0;</td>
+              </tr></tbody></table>
+
+              <!-- CTA 1 -->
+              <table class="row"><tbody><tr>
+                <td class="small-12 large-7 columns first">
+                <td class="small-12 large-5 columns last">
+                    <table class="button expand">
+                      <tr><td><table><tr><td>
+                        <center>
+                          <a align="center" class="float-center" href="http://efbe.github.io/resume/">Check out my resume page</a>
+                        </center>
+                      </td></tr></table></td></tr>
+                    </table>
+                </td>
+              </tr></tbody>
+              </table>
+              <table class="spacer"><tbody><tr>
+                <td height="48px" style="font-size:48px;line-height:48px;">&#xA0;</td>
+              </tr></tbody></table>
+
+              <!-- Why Ariad? -->
+              <table class="row"><tbody><tr>
+                <td class="small-12 large-12 columns first last"><table><tr><td>
+                  <h1>Why Ariad?</h1>
+                  <p>I came across your job offer on Glassdoor and what got me is that you are looking for someone
+                    who is good in a certain area. In my opinion good cross functional teams include expert individuals
+                    and not unified people. For example a guy who is good at setting up a React / Redux / Karma / Mocha /
+                    etc... environment is not necessary likes to rasp with button radiuses and input line-heights.
+                    I think there are development- and design-heavy Front End developers and I consider myself the
+                    latter. And it seems you are looking for me this time.</p>
+                </td></tr></table></td>
+              </tr></tbody></table>
+              <table class="spacer"><tbody><tr>
+                <td height="16px" style="font-size:16px;line-height:16px;">&#xA0;</td>
+              </tr></tbody></table>
+
+              <!-- CTA 2 -->
+              <table class="row"><tbody><tr>
+                <td class="small-12 large-8 columns first">
+                <td class="small-12 large-4 columns first last">
+                  <center data-parsed="">
+                    <table class="button expand">
+                      <tr><td><table><tr><td>
+                        <center>
+                          <a align="center" class="float-center" href="mailto:balazsfoky@yahoo.com">Drop me an email</a>
+                        </center>
+                      </td></tr></table></td></tr>
+                    </table>
+                  </center>
+                </td>
+              </tr></tbody>
+              </table>
+              <table class="spacer"><tbody><tr>
+                <td height="48px" style="font-size:48px;line-height:48px;">&#xA0;</td>
+              </tr></tbody></table>
+
+              <!-- Why Toronto? -->
+              <table class="row"><tbody><tr>
+                <th class="small-12 large-12 columns first last" style="padding-bottom: 10px;"><table><tr><td>
+                  <h1>Why Toronto?</h1>
+                </td></tr></table></th>
+              </tr></tbody></table>
+              <table class="row"><tbody><tr>
+                <td class="small-12 large-6 columns first"><table><tr><td>
+                  <img class="small-float-center" src="assets/toronto-300.jpg" alt="Toronto skyline">
+                </td></tr></table></td>
+                <td class="small-12 large-6 columns last"><table><tr><th>
+                  <p>Well I mentioned that I like to travel around but since my wife ran a coffee shop
+                    here in Budapest we haven't had much time for that. However She decided to sell the shop and we
+                    became quite mobile since January. We decided to pack our bags and check what's out there.
+                    So we are looking for a nice city for the next couple of years and among others
+                    Toronto seems like one of them. Unfortunately we haven't been there yet but all the reviews are
+                    positive and the weather is quite similar to Budapest.</p>
+                </th></tr></table></td>
+              </tr></tbody></table>
+              <table class="spacer"><tbody><tr>
+                <td height="48px" style="font-size:48px;line-height:48px;">&#xA0;</td>
+              </tr></tbody></table>
+
+              <!-- Thanks! -->
+              <table class="row"><tbody><tr>
+                <td class="small-12 large-12 columns first last" style="padding-bottom: 10px;"><table><tr><td>
+                  <h2>Well that's it. Thanks for your time.
+                    <br>Don't forget to drop me an email and tell me what you think!</h2>
+                </td></tr></table></td>
+              </tr></tbody></table>
+              <table class="spacer"><tbody><tr>
+                <td height="32px" style="font-size:32px;line-height:32px;">&#xA0;</td>
+              </tr></tbody></table>
+
+              <!-- Footer -->
+              <table class="row collapsed footer" style="background: #299ecf;"><tbody><tr>
+                <td align="center"><table class="menu float-center"><tr>
+                  <td class="menu-item float-center">
+                    <a title="Send me an email" href="mailto:balazsfoky@yahoo.com">
+                      <img src="assets/mail-icon.jpg" width="25" height="25" alt="Send me an email">
+                    </a>
+                  </td>
+                  <td class="menu-item float-center">
+                    <a title="My LinkedIn profile" href="https://www.linkedin.com/in/balazsfoky">
+                      <img src="assets/linkedin-icon.jpg" width="25" height="25" alt=" LinkedIn profile">
+                    </a>
+                  </td>
+                  <td class="menu-item float-center">
+                    <a title="My Github profile" href="https://github.com/efbe/">
+                      <img src="assets/octocat-icon.jpg" width="25" height="25" alt="Github profile">
+                    </a>
+                  </td>
+                  <td class="menu-item float-center">
+                    <a title="Download my resume" href="https://docs.google.com/document/d/1lqHF0U9fsxpFtqDAst44GPPxrNBYUTiT0KlJgCyTV2k/edit?usp=sharing">
+                      <img src="assets/resume-icon.jpg" width="25" height="25" alt="Downloadable resume">
+                    </a>
+                  </td>
+                </tr></tbody></table>
+              </tr></tbody></table>
+
+            <!-- end of main container -->
+            </td></tr></tbody></table>
+          </center>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
