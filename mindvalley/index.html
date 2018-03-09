@@ -12,6 +12,7 @@
 </head>
 	<body>
 		<div class="sidebar">
+			<a href="#" class="toggle-menu material-icons">format_list_bulleted</a>
 			<h1>Westeros</h1>
 			<ul class="side-menu">
 				<li><a href="#"><i class="icon material-icons">shopping_cart</i>Products</a></li>
@@ -21,16 +22,16 @@
 		</div>
 		<div class="main-content">
 			<header class="clear">
-				<div class="search">
-					<input class="search-field" type="text" placeholder="Type to Search…" />
-					<i class="icon material-icons">search</i>
-				</div>
 				<a href="#" class="user-panel">
 					<i class="icon material-icons">account_circle</i>
 					<span class="user-name">
 						Irina Lipovaya
 					</span>
 				</a>
+				<div class="search">
+					<input class="search-field" type="text" placeholder="Type to Search…" />
+					<i class="icon material-icons">search</i>
+				</div>
 			</header>
 			<section class="content clear">
 				<h2>Products</h2>
@@ -118,4 +119,17 @@
 			</section>
 		</div>
 	</body>
+
+	<!-- minor js to toggle mobile menu. didn't want to include all jquery for this -->
+	<script>
+		var hamburger = document.querySelector('.toggle-menu'),
+			menu = document.querySelector('.side-menu');
+
+		function toggleMenu(event) {
+			event.preventDefault();
+			menu.classList.toggle('opened');
+		}
+
+		hamburger.addEventListener('click', toggleMenu);
+	</script>
 </html>
