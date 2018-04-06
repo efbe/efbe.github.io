@@ -1,0 +1,2 @@
+webpackJsonp([4],{TVmP:function(t,e,s){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var n={render:function(){var t=this.$createElement,e=this._self._c||t;return e("footer",{staticClass:"clear",attrs:{role:"banner"}},[e("p",{staticClass:"desktop-only"},[this._v("You can book the Birdnest anytime of the year.")]),this._v(" "),e("router-link",{staticClass:"button",attrs:{to:"/"}},[this._v("Request to book")])],1)},staticRenderFns:[]},o=s("VU/8")({name:"Footer"},n,!1,null,null,null);e.default=o.exports}});
+//# sourceMappingURL=4.0da2d60221e6813aa094.js.map
