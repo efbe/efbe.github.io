@@ -1,6 +1,50 @@
-.content {
+$grid-unit: 8px;
+
+header {
+    position: sticky;
+    height: $grid-unit * 11;  /* content + gaps */
+    top: $grid-unit * -2; 
+    z-index: 1;
+
+    &::before,
+    &::after {
+        position: sticky;
+        box-sizing: border-box;
+        content: '';
+        display: block;
+        height: $grid-unit * 2;
+    }
+
+    &::before {
+        top: $grid-unit * 7;
+        box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f; // mat card shadow
+    }
+
+    &::after {
+        top: 0;
+        background: linear-gradient(white 10%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.4) 70%, transparent);
+        z-index: 2;
+    }
+
+    .content {
+        box-sizing: border-box;
+        height: $grid-unit * 9;
+        position: sticky;
+        top: 0px;
+        margin-top: $grid-unit * -2;
+        z-index: 3;
+        background-color: white; // cover shadows
+    }
+}
+
+main {
     margin:  0 auto;
     width: 800px;
     
-    background-color: red;
+    height: 1000px;
+    background-color: white;
+
+    @media (max-width: 840px) {
+        width: 90%;
+    }
 }
