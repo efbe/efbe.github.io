@@ -3,6 +3,10 @@
 @use "@material/layout-grid/mdc-layout-grid";
 @import 'animate.css';
 
+:root {
+    --animate-duration: 1.5s;
+}
+
 html, body { height: 100%; }
 * { box-sizing: border-box; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
