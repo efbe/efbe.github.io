@@ -46,7 +46,9 @@ header {
         animation-name: fadeInDown;
         animation-duration: 1s;
         animation-fill-mode: both;
+        
         -webkit-transform: scale(1);
+        -webkit-backface-visibility: hidden;
 
         @media (max-width: 840px) {
             width: calc(100vw - #{$grid-unit} * 4);
