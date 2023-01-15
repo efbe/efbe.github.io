@@ -25,7 +25,7 @@ header {
         z-index: 2;
     }
 
-    .content {
+    .header-content {
         position: sticky;
         top: 0px;
         height: $grid-unit * 9;
@@ -35,8 +35,6 @@ header {
     }
 
     .business-card {
-        display: flex;
-        flex-wrap: wrap;
         margin: 0 auto;
         padding: $grid-unit $grid-unit * 2;
         width: 800px;
@@ -63,6 +61,11 @@ header {
                 font-size: 12px;
                 line-height: 16px;
             }
+        }
+
+        &-content {
+            display: flex;
+            flex-wrap: wrap;
         }
 
         .profile-pic {
@@ -94,24 +97,26 @@ main {
         padding-left: 0;
         padding-right: 0;
     }
+}
 
-    .animation-wrapper {
-        animation-delay: 1s;
-        animation-name: fadeIn;
-        animation-duration: 1s;
-        animation-fill-mode: both;
-        animation-timing-function: ease;
-    }
+// Util classes
+.fade-in {
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+}
+
+.animation-delay {
+    animation-delay: 1s;
 }
 
 // Animations
 @keyframes slideDown {
     0% {
-        opacity: 0;
         top: $grid-unit * -9; // initial state
     }
     100% {
-        opacity: 1;
         top: 0;
     }
 }
