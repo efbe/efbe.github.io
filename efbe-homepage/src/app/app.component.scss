@@ -45,11 +45,7 @@ header {
         animation-name: fadeInDown;
         animation-duration: 1s;
         animation-fill-mode: both;
-
-        -webkit-transform: scale(1);
-        -webkit-backface-visibility: hidden;
-        -webkit-transform: translate3D(0, 0, 0);
-        -webkit-transform-style: preserve-3d;
+        animation-timing-function: ease-in;
 
         @media (max-width: 840px) {
             width: calc(100vw - #{$grid-unit} * 4);
@@ -103,6 +99,7 @@ main {
         animation-name: fadeIn;
         animation-duration: 2s;
         animation-fill-mode: both;
+        animation-timing-function: ease-in-out;
     }
 }
 
