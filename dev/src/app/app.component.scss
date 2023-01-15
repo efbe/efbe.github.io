@@ -1,0 +1,125 @@
+$grid-unit: 8px;
+
+header {
+    position: sticky;
+    height: $grid-unit * 11;  /* content + gaps */
+    top: $grid-unit * -2; 
+    z-index: 1;
+
+    &::before,
+    &::after {
+        position: sticky;
+        content: '';
+        display: block;
+        height: $grid-unit * 2;
+    }
+
+    &::before {
+        top: $grid-unit * 7;
+        box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f; // mat card shadow
+    }
+
+    &::after {
+        top: 0;
+        background: linear-gradient(white 10%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.4) 70%, transparent);
+        z-index: 2;
+    }
+
+    .content {
+        position: sticky;
+        top: 0px;
+        height: $grid-unit * 9;
+        margin-top: $grid-unit * -2;
+        z-index: 3;
+        background-color: white; // cover shadows
+    }
+
+    .business-card {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: $grid-unit $grid-unit * 2;
+        width: 800px;
+        height: $grid-unit * 9;
+
+        position: relative;
+        animation-name: slideDown;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+
+        @media (max-width: 840px) {
+            width: calc(100vw - #{$grid-unit} * 4);
+            padding-left: 0;
+            padding-right: 0;
+
+            h1 {
+                margin-top: $grid-unit;
+                font-size: 18px;
+                line-height: 24px;
+            }
+
+            p {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+
+        .profile-pic {
+            width: $grid-unit * 7;
+            height: $grid-unit * 7;
+            margin-right: $grid-unit * 2;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .profile-text {
+            h1, p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+main {
+    margin: 0 auto;
+    padding: $grid-unit * 2;
+    width: 800px;
+    
+    margin-bottom: 48px;
+    background-color: white;
+
+    @media (max-width: 840px) {
+        width: calc(100vw - #{$grid-unit} * 4);
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .animation-wrapper {
+        animation-delay: 1s;
+        animation-name: fadeIn;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+        animation-timing-function: ease-in-out;
+    }
+}
+
+// Animations
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        top: $grid-unit * -9; // initial state
+    }
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
