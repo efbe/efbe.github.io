@@ -3,6 +3,7 @@ $grid-unit: 8px;
 header {
     position: sticky;
     height: $grid-unit * 11;  /* content + gaps */
+    overflow: hidden;
     top: $grid-unit * -2; 
     z-index: 1;
 
@@ -42,6 +43,10 @@ header {
         width: 800px;
         height: $grid-unit * 9;
 
+        animation-name: fadeInDown;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+
         @media (max-width: 840px) {
             width: calc(100vw - #{$grid-unit} * 4);
             padding-left: 0;
@@ -79,7 +84,6 @@ main {
     margin: 0 auto;
     padding: $grid-unit * 2;
     width: 800px;
-    overflow: hidden;
     
     margin-bottom: 48px;
     background-color: white;
@@ -88,5 +92,33 @@ main {
         width: calc(100vw - #{$grid-unit} * 4);
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .animation-wrapper {
+        animation-delay: 1s;
+        animation-name: fadeIn;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+    }
+}
+
+// Animations
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
