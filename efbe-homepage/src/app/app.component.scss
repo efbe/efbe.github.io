@@ -3,7 +3,6 @@ $grid-unit: 8px;
 header {
     position: sticky;
     height: $grid-unit * 11;  /* content + gaps */
-    overflow: hidden;
     top: $grid-unit * -2; 
     z-index: 1;
 
@@ -50,6 +49,7 @@ header {
         -webkit-transform: scale(1);
         -webkit-backface-visibility: hidden;
         -webkit-transform: translate3D(0, 0, 0);
+        -webkit-transform-style: preserve-3d;
 
         @media (max-width: 840px) {
             width: calc(100vw - #{$grid-unit} * 4);
