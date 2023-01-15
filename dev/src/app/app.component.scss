@@ -45,7 +45,7 @@ header {
         position: relative;
         animation-name: slideDown;
         animation-duration: 1s;
-        animation-timing-function: ease-in;
+        animation-timing-function: ease-in-out;
         animation-fill-mode: both;
 
         @media (max-width: 840px) {
@@ -100,7 +100,7 @@ main {
         animation-name: fadeIn;
         animation-duration: 1s;
         animation-fill-mode: both;
-        animation-timing-function: ease-in;
+        animation-timing-function: ease;
     }
 }
 
