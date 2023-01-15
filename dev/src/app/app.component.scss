@@ -46,6 +46,7 @@ header {
         animation-name: slideDown;
         animation-duration: 1s;
         animation-timing-function: linear;
+        animation-fill-mode: both;
 
         @media (max-width: 840px) {
             width: calc(100vw - #{$grid-unit} * 4);
