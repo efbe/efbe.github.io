@@ -11,6 +11,12 @@ $grid-unit: 8px;
 article {
     margin-bottom: $grid-unit * 8;
     
+    &:last-of-type {
+        @media (max-width: 840px) {
+            margin-bottom: 0;
+        }
+    }
+
     img {
         width: 100%; // responsive
         border: 1px solid #9f9f9f;

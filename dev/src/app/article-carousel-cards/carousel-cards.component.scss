@@ -1,7 +1,7 @@
 $grid-unit: 8px;
 
 article {
-    margin-bottom: 32px;
+    margin-bottom: $grid-unit * 4;
 }
 
 section {
@@ -16,6 +16,10 @@ section {
 
         &.bottom-gap {
             margin-bottom: $grid-unit * 2;
+        }
+
+        &.no-gap {
+            margin-bottom: 0;
         }
     }
 }
