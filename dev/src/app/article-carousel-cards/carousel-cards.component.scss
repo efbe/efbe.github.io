@@ -1,20 +1,53 @@
 $grid-unit: 8px;
 
+article {
+    margin-bottom: 32px;
+}
+
+section {
+    padding-top: $grid-unit * 5;
+
+    @media (max-width: 840px) {
+        padding-top: $grid-unit * 4;
+    }
+
+    img {
+        margin-bottom: $grid-unit;
+
+        &.bottom-gap {
+            margin-bottom: $grid-unit * 2;
+        }
+    }
+}
+
+h3 {
+    margin: 0 0 $grid-unit * 2;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    font-family: 'Open Sans', sans-serif;
+
+    @media (max-width: 840px) {
+        line-height: 32px;
+        font-size: 20px;
+    }
+}
+
 h4 {
-    margin: 8px 0 16px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
+    margin: 0 0 $grid-unit * 2;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
     font-family: 'Open Sans', sans-serif;
 
     @media (max-width: 840px) {
         line-height: 24px;
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
 p {
-    margin-bottom: 16px;
+    margin-bottom: $grid-unit * 2;
     line-height: 1.5em;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -23,12 +56,14 @@ p {
         font-size: 14px;
     }
 
+    a {
+        color: #252525;
+        text-decoration: none;
+        box-shadow: inset 0 -1px 0 #9f9f9f;
+    }
+
     &.read-more {
         a {
-            color: #252525;
-            text-decoration: none;
-            box-shadow: inset 0 -1px 0 #9f9f9f;
-
             .material-symbols-outlined {
                 position: relative;
                 top: 2px;
