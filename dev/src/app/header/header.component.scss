@@ -1,0 +1,91 @@
+$grid-unit: 8px;
+
+.business-card {
+    margin: 0 auto;
+    padding: $grid-unit $grid-unit * 2;
+    width: 800px;
+    height: $grid-unit * 9;
+
+    position: relative;
+    animation-name: slideDown;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+
+    @media (max-width: 840px) {
+        width: calc(100vw - #{$grid-unit} * 4);
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .profile-pic {
+        width: $grid-unit * 5;
+        height: $grid-unit * 5;
+        margin-top: $grid-unit;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;
+    }
+
+    .profile-text {
+        margin-left: $grid-unit * 2;
+
+        h2, p {
+            margin-bottom: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        h2 {
+            font-weight: 400;
+        }
+
+        @media (max-width: 840px) {
+            h2 {
+                margin-top: $grid-unit;
+                font-size: 18px;
+                line-height: 24px;
+            }
+
+            p {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+    }
+}
+
+// Util classes
+.fade-in {
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+}
+
+.animation-delay {
+    animation-delay: 1s;
+}
+
+// Animations
+@keyframes slideDown {
+    0% {
+        top: $grid-unit * -9; // initial state
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
