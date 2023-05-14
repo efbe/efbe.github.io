@@ -28,7 +28,7 @@ const routes: Routes = [
     AppRoutingModule,
     NoopAnimationsModule,
     MatIconModule,
-    RouterModule.forRoot(routes, { useHash: false })
+    RouterModule.forRoot(routes, { useHash: true })
   ],
   providers: [],
   bootstrap: [AppComponent]
