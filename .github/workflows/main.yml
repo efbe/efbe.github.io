@@ -20,8 +20,8 @@ jobs:
           npm run build
 
       - name: Deploy 🚀
-        working-directory: ./dev
         uses: JamesIves/github-pages-deploy-action@v4
+        working-directory: ./dev
         with:
           folder: dist
           clean: true
