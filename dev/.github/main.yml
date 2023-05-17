@@ -1,0 +1,13 @@
+name: Octo Organization CI
+
+on:
+  push:
+    branches: [ $default-branch ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy GitHub Pages site
+        uses: actions/deploy-pages@v2.0.1
