@@ -14,11 +14,13 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install and Build
+        working-directory: ./dev
         run: |
           npm ci
           npm run build
 
       - name: Deploy 🚀
+        working-directory: ./dev
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist
