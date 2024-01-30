@@ -17,7 +17,7 @@ h4 {
     margin: $grid-unit * 2 0;
     font-weight: 600;
     font-size: 24px;
-    line-height: 1.5em;
+    line-height: 1.2em;
     font-family: 'Open Sans', sans-serif;
 
     @media (max-width: 840px) {
@@ -26,6 +26,7 @@ h4 {
 }
 
 p {
+    margin-top: $grid-unit * 1.5;
     margin-bottom: $grid-unit * 2;
     line-height: 1.5em;
     font-family: 'Open Sans', sans-serif;
@@ -35,16 +36,45 @@ p {
         font-size: 14px;
     }
 
+    &.intro {
+        margin-top: 0;
+        margin-bottom: $grid-unit * 6;
+
+        a {
+            color: #252525;
+            text-decoration: none;
+            box-shadow: inset 0 -1px 0 #9f9f9f;
+            transition: all linear 0.25s;
+
+            &:hover {
+                color: #000;
+                box-shadow: inset 0 -1px 0 #000;
+            }
+        }
+    }
+
     &.read-more {
         a {
             color: #252525;
             text-decoration: none;
             box-shadow: inset 0 -1px 0 #9f9f9f;
+            transition: all linear 0.25s;
+
+            &:hover {
+                color: #000;
+                box-shadow: inset 0 -1px 0 #000;
+
+                .material-symbols-outlined {
+                    left: 2px;
+                }
+            }
 
             .material-symbols-outlined {
                 position: relative;
                 top: 2px;
+                left: 0; // to animate
                 font-size: 18px;
+                transition: left ease 0.25s;
 
                 @media (max-width: 840px) {
                     font-size: 16px;
