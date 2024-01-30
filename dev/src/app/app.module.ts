@@ -10,7 +10,10 @@ import { MatIconModule } from '@angular/material/icon';
 
 import { HeaderComponent } from './header/header.component';
 import { HomePageComponent } from './home-page/home-page.component';
+
+// pages
 import { CarouselCardsComponent } from './article-carousel-cards/carousel-cards.component';
+import { MultiLayeredTokensComponent } from './article-multi-layered-tokens/multi-layered-tokens.component';
 
 const routes: Routes = [
 
@@ -22,6 +25,7 @@ const routes: Routes = [
     HeaderComponent,
     HomePageComponent,
     CarouselCardsComponent,
+    MultiLayeredTokensComponent,
   ],
   imports: [
     BrowserModule,
