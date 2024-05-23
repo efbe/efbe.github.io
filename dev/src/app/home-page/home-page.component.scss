@@ -5,7 +5,7 @@ h4 {
     font-weight: 600;
     font-size: 24px;
     line-height: 1.4em;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Bitter','Open Sans', sans-serif;
     color: #252525;
 
     @media (max-width: 840px) {
@@ -79,11 +79,15 @@ p {
 }
 
 article {
-    margin-bottom: $grid-unit * 6;
+    margin-bottom: $grid-unit * 8;
 
     &:last-of-type {
         @media (max-width: 840px) {
             margin-bottom: 0;
         }
+    }
+
+    img {
+        cursor: pointer;
     }
 }

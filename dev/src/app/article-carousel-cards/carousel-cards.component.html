@@ -1,74 +1,77 @@
 <article class="fade-in" id="top">
-  <h3>Carousel cards with interactive video thumbnail</h3>
-  <p>The objective was to explore different possibilities of live streaming throughout our Sportsbook product 
-    with a hypothesis of increasing user engagement for visiting a certain event's detail page or 
-    placing a bet based on the information gained from the content of the displayed video.</p>
+  <h3>Carousel Cards with Interactive Video Thumbnail</h3>
+  <p>The objective was to explore various possibilities of live streaming within our Sportsbook product, 
+    with the hypothesis of enhancing user engagement by enticing them to visit a specific event's detail 
+    page or place a bet based on the information acquired from the displayed video content.</p>
+  <p>In this project, my role involved collaborating with the Frontend Tech Lead to explore available 
+    technologies, design potential variants, and craft high-fidelity prototypes for the selected ones.</p>
 
   <section>
-    <h4>Discovery</h4>
-    <p>The scope of my discovery was to integrate video format (supplied by our 3rd party providers) into our Event carousel cards 
-      featured on our "Category" and "Most Popular" pages focusing specifically on mobile platform.</p>
+    <h4>Video Player Discovery</h4>
+    <p>The scope of my discovery was to integrate video formats, supplied by our third-party providers, 
+      into the event carousel cards featured on our "Category" and "Most Popular" pages, with a specific 
+      focus on the mobile platform.</p>
     <img src="assets/video-thumb-aspect-discovery.jpg" alt="Video thumbnail aspect ration discovery in Figma" />
-    <p>As a first step I looked into different video aspect ratios and their best practices on popular social media platforms 
-      and compared them to our current production- and proposed Design System update dimensions.</p>
+    <p>As a first step, I researched different video aspect ratios and their best practices on popular 
+      social media platforms. I then compared them to our current production and proposed Design System dimensions.</p>
   </section>
 
   <section>
-    <h4>Designing component variant proposals</h4>
-    <p>Once I selected the most feasible aspect ratios I've created the carousel card variants based 
-      on our current production designs using different video sizes and layout permutations.</p>
+    <h4>Designing Component Variant Proposals</h4>
+    <p>After selecting the most feasible aspect ratios, I created carousel card variants based on our current 
+      production designs, incorporating different video sizes and layout permutations.</p>
     <img src="assets/video-thumb-design-proposals.jpg" alt="Video thumbnail design proposals in Figma" />
-    <p>At this point the ongoing Design System initiative only covered the atomic level components so 
-      I've created this card molecule from scratch without any tokenization and such. It was already decided that we will move 
-      forward with a prototyping phase so in this step I only designed for one of our brands taking our two event 
-      phases (live &amp; prematch) into consideration.</p>
-    <p>After showcasing the possible variants on a demo session for the stakeholders we narrowed down the scope for prototyping.</p>
+    <p>
+      At this point, the ongoing Design System initiative only covered the atomic-level components. Therefore, 
+      I created this card molecule from scratch without any tokenization or similar processes. Since it was 
+      already decided that we would move forward with a prototyping phase, I designed for one of our brands, 
+      considering our two event phases (live and prematch).</p>
+    <p>After showcasing the possible variants in a demo session for the stakeholders, we narrowed down the scope for prototyping.</p>
     <img src="assets/video-thumb-design-proposals-context.jpg" class="bottom-gap" alt="Video thumbnail design proposals in Figma" />
   </section>
 
   <section>
-    <h4>Hi-fidelity prototyping</h4>
-    <p>At this time the video embedding in Figma was very rudimentary and our stakeholders wanted to test this 
-      component on an actual handheld device - not only on desktop as a screen emulation - so as a part of my second discovery 
-      process I looked into the possibities of the 
-      <a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API" target="_blank">Intersection Observer API</a>
-      and the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video" target="_blank">Video Embed element</a>
-      and used my Angular-based application to build the prototypes for web browsers.
+    <h4>Hi-Fidelity Prototyping</h4>
+    <p>At that time, video embedding in Figma was very rudimentary, and our stakeholders wanted to test this component on 
+      actual handheld devices, not just desktop screen emulations. As part of my second discovery process, I explored the possibilities 
+      of the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API" target="_blank">Intersection Observer API</a> 
+      and the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video" target="_blank">Video Embed element</a>. 
+      I utilized my Angular-based application to build prototypes for web browsers.
     </p>
     <img src="assets/carousel-video-proto.gif" alt="Video thumbnail prototype" />
-    <p>With URL-based feature toggling I've created four variants based on different thumbnail sizes and user controls to test 
-      the autoplay/autostop options for well developed markets. Plus an additional dark themed version to cover one of our 
-      Nordic brands.</p>
+    <p>Using URL-based feature toggling, I created four variants based on different thumbnail sizes and user controls 
+      to test autoplay/autostop options for well-developed markets. Additionally, I developed an extra dark-themed 
+      version to accommodate one of our Nordic brands.</p>
   </section>
 
   <section>
-    <h4>Prototype evaluation &amp; Conclusion</h4>
-    <p>To summarize our possibilites and limitations I've created a pretty hefty presentation deck breaking down the variants 
-      including OS- and app-specific information about the autoplay functionality, native HTML Video element controls 
-      and comparison to our current implementation regarding interchangable media types.</p>
-    <p>Feel free to download the presentation, in a .key format but beware of the size because it contains videos :)</p>
-    <p class="read-more">
+    <h4>Prototype Evaluation and Conclusion</h4>
+    <p>To summarize our possibilities and limitations, I created a comprehensive presentation deck that breaks down the variants. 
+      This includes OS- and app-specific information about the autoplay functionality, native HTML Video element controls, 
+      and a comparison to our current implementation regarding interchangeable media types.</p>
+    <p>Feel free to download the presentation in .key format, but please be aware of the size as it contains videos!</p>
+    <p class="read-more download">
       <a target="_blank" href="https://drive.google.com/file/d/1ODPRJ8IG3yadSF3r6GK4KiYO-7Vfun3r/view?usp=share_link">
-        Download the slides (90 MB) <span class="material-symbols-outlined">download</span>
+        Download the slides (90 MB) <span class="material-symbols-outlined">arrow_downward</span>
       </a>
     </p>
     <img src="assets/carousel-video-evaluation.jpg" alt="Video thumbnail evaluation deck" />
-    <p>The conclusion by different stakeholders including members of our Offering team was to abandon the project because we 
-      were only receiving (affordable) live streaming material for low profile events and the development was not feasible 
-      at the time. Fortunately the quickly developing Internet connectivity in our key markets and the promising trends 
-      of eSports will turn this ship around anytime soon.</p>
+    <p>The conclusion reached by various stakeholders, including members of our Offering team, was to abandon the project 
+      due to the availability of only (affordable) live streaming material for low-profile events and the infeasibility 
+      of development at the time. However, the rapidly developing internet connectivity in our key markets and the 
+      promising trends of eSports suggest that this situation may change soon.</p>
   </section>
 
   <section>
-    <h4>Sharing the knowledge</h4>
-    <p>I really enjoyed learning a lot during the process so I decided to share the knowledge with design- and development team members 
-      in the form of a second presentation solely focusing on the potential of the applied technology featuring some examples utilizing the 
-      Intersection Observer API and specifics about how browsers for different operational systems render native HTML Video players.
-    </p>
+    <h4>Sharing Knowledge</h4>
+    <p>I really enjoyed learning throughout the process, prompting me to share the knowledge with members of 
+      both the design and development teams. I crafted a second presentation solely focusing on the potential of 
+      the applied technology. This presentation includes examples utilizing the Intersection Observer API and 
+      specifics about how browsers on different operating systems render native HTML Video players.</p>
     <p>These slides are also available if you are interested.</p>
-    <p class="read-more">
+    <p class="read-more download">
       <a target="_blank" href="https://drive.google.com/file/d/1OMcnuqif7TFfDv8D9y6a5YLetY_JW2YC/view?usp=share_link">
-        Download the slides (100.5 MB) <span class="material-symbols-outlined">download</span>
+        Download the slides (100.5 MB) <span class="material-symbols-outlined">arrow_downward</span>
       </a>
     </p>
     <img class="no-gap" src="assets/carousel-video-knowledge-sharing.jpg" alt="Video thumbnail knowledge sharing deck" />

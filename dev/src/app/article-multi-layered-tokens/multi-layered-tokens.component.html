@@ -1,18 +1,138 @@
 <article class="fade-in" id="top">
-  <h3>Introducing the Multi-layered Token Architecture to our Design System</h3>
-  <p>The objective was to explore different possibilities of live streaming throughout our Sportsbook product 
-    with a hypothesis of increasing user engagement for visiting a certain event's detail page or 
-    placing a bet based on the information gained from the content of the displayed video.</p>
+  <h3>New Design System Component Building Approach</h3>
+  <p>One of the main objectives of the Sportsbook Product Design Team was to redesign our 
+    leading online betting brand for the Nordic market. With a user base known for its conservatism, 
+    the goal was to modernize the user experience and elevate the brand's appeal.</p>
+  <p>To achieve this goal, we revamped our current color scheme logic and implemented a new design 
+  system component building approach, along with an enhanced design token structure. The new approach 
+  and maintenance flow not only enables designers to directly integrate production code through Figma 
+  and Github but also plays a crucial role in theme and tone switching within Figma. This allows us to 
+  validate new design components across our different brands for various markets.</p>
+  <p>In this project, my role is to collaborate with the Principal UI Designer and Frontend Architect 
+    to establish the key artifacts. Additionally, I am responsible for onboarding and co-leading the UI 
+    Designers working on our Design System components.</p>
 
-  
-    <section>
-      <p class="read-more">
-        <a routerLink="/">
-          <span class="material-symbols-outlined">
-              keyboard_backspace
-          </span>
-          Back
-        </a>
-      </p>
-    </section>
+  <section>
+    <h4>Technical Discovery for Figma</h4>
+    <p>The evolution of industry-standard design tools has progressed significantly in recent years.<br>
+      We migrated our assets from Sketch to Figma a couple of years ago, and it was a challenging and 
+      costly process with minimal business value. Therefore, we had to be very cautious when selecting 
+      our foundations for the coming years.</p>
+    <img src="assets/figma-roadmap-2023.jpg" alt="Figma Roadmap Snippet from 2023" />
+    <p>I reached out to Figma's business representatives to obtain information about their plans for token 
+      management and plugin integration. Since their variable implementation ideas were quite basic 
+      at the time and the multi-brand support would have meant an additional cost for upgrading our entire 
+      organization's plan, I opted for Token Studio over their native variables after they assured us about 
+      the plugin support.</p>
+  </section>
+
+  <section>
+    <h4>Design Token Architecture Enhancements</h4>
+    <p>With the introduction of unified tokens, our main goals were cost-effectiveness and flexibility. 
+      To simplify component creation and UI theming, we reduced the number of structural and surface-related 
+      tokens. For added flexibility, which is often requested by our B2B partners, we increased brand-level 
+      properties, including so-called "product" background and complementary text colors, border radii, 
+      and richer typographical elements.</p>
+
+    <p>Based on the characteristics of cascading stylesheets responsible for rendering UI components in web browsers 
+      and utilizing the different token group levels provided by the Token Studio plugin, I've designed a 
+      brand new semantic 3-level token system.</p>
+    <img src="assets/token-architecture-cover.jpg" alt="Multi-layered Token Architecture Scheme" />
+    <p>Global structural tokens are shared across all brands and are responsible for spacings and sizings throughout 
+      the entire application. Brand-level tokens are used for both light and dark themes, while theme-specific adaptive
+      tokens store surface and text color values for each brand's light or dark variations.</p>
+    <p>I also introduced a set of composite tokens for each respective level. For instance, typographic tokens are 
+      created at the brand level from global variables (such as line height) and brand-specific properties (like font family). 
+      Theme-specific text colors are interpolated with master opacity tokens to ensure consistency.</p>
+  </section>
+
+  <section>
+    <h4>Taking our Color System to the Next Level</h4>
+    <p>Originally, our products used a single tone for surface colors—either light or dark neutrals with the corresponding 
+      text colors, along with their respective brand colors. However, this new token structure has enabled us to support 
+      duo-tone themes.</p>
+      <p>We introduced a mirroring logic for the surface colors, consisting of 5 shades each from a 20-step generated palette, 
+        with an additional shared color that connects the light and dark tones for certain components. All colors from this 
+        palette are added to the tokens at the brand level to preserve each step along with the logic between them. 
+        We reference them at the respective theme level.</p>
+    <img src="assets/revised-color-system.jpg" alt="Revised color system with contrast passing" />
+    <p>Having 20 shades instead of just the 11 that are actually used provides us with flexibility in achieving proper 
+      contrast with brand colors.</p>
+    <p>Text colors are based on the darkest and lightest palette colors and are modified with global variables to 
+      create high, medium, and low emphasis, similar to Material Design's color system. With this approach, we managed 
+      to achieve AA compliance standards for our most prominent components for certain brands.</p>
+  </section>
+
+  <section>
+    <h4>Redesigning Components with the New Token Set</h4>
+    <p>We began field testing these new color tokens by redesigning a handful of our most common UI components. 
+      This allowed us to assess the flexibility of the custom properties and observe how quickly the Token Studio plugin 
+      renders updates across different brands and tones at various atomic levels. Don't forget that we did not have 
+      native Figma Variable support at that time.</p>
+    <img src="assets/redesigned-components.jpg" alt="Redesigned components in the organism" />
+    <p>In the tab component, the new border radius token, along with smarter usage and reduction of surface colors, provides 
+      more emphasis on the content. The new system of text and surface colors allowed us to remove the brand color from the 
+      title text while achieving an AA grade contrast ratio.</p>
+    <p>For our market selector, I began moving away from desktop-specific controls and started utilizing brand-level color tokens. 
+      The navigation chips offer a native mobile experience and reduce the need for custom UI components. They also help distinguish 
+      the selection from other options while the horizontal swipe interaction simplifies the UX by eliminating an extra 
+      step / layer from the z-axis compared to the original dropdown solution.</p>
+    <p>In case of the event result selector, the new border radius token and smaller gaps between the buttons led to better 
+      cohesion within an event's selections. With the reduction of the dimension tokens, the selection buttons now use a 
+      standardized height instead of a custom value.</p>
+  </section>
+
+  <section>
+    <h4>From Design to Code</h4>
+    <p>Once I confirmed that the components worked as expected in Figma, I presented the proof of concept to our key stakeholders, 
+      UI team members, and Frontend Architects. Together, we began setting up the deployment part of the token pipeline.</p>
+    <img src="assets/token-pipeline.jpg" alt="Design Token Pipeline from Figma to Production code" />
+    <p>After the resolver was in place to translate our design tokens to CSS variables in the production code, we rolled out our very 
+      first token set to the aforementioned Nordic brand in March 2024. The plan for this year is to continue with the rest of 
+      our brands, which means more than 15 individual themes, along with their light and dark variants.</p>
+   
+    <p>Regarding our Figma components, we began building on our existing Design System, redefining components with the new tokens 
+      to support the duo-tone appearance. Since we previously didn't have a standardized handover process, I suggested extending 
+      the scope of this project to include the standardization of our visual handovers to developers, product owners, and quality 
+      assurance personnel. To achieve this, I began experimenting with the 
+      <a href="https://www.figma.com/community/plugin/1205622541257680763/eightshapes-specs" target="_blank">EightShapes Specs plugin</a> 
+      developed by Nathan Curtis, creating complex UI component specs along with all available variants of their subatomic particles.</p>
+    <img src="assets/component-specs.jpg" alt="Component Specs for the Main Navigation" />
+    <p>The Sportsbook design team decided to start to use the plugin with a limited set of features, outputting basic visuals 
+      to reduce the delivery time of our first brands. As the next step, we are planning to introduce more features, including token 
+      consumption details, and a standardized format for generated specs to introduce a comprehensive, living documentation for our new 
+      duo-tone design system components.</p>
+  </section>
+
+  <section>
+    <h4>Plans for the Future</h4>
+    <p>With the new token architecture and color system, the UI design team is technically ready to upgrade our existing components and 
+      craft new ones as requested by our product backlog. In the upcoming months, we need to agree on a token documentation format 
+      with the Front End developers and Product Owners. Additionally, since the number of component upgrade requests has increased 
+      with the redesign initiative, we need to enhance our prioritization process and update our roadmap for the year.</p>
+    <img src="assets/component-integration-graph.jpg" alt="Component implementation graph" />
+    <p>In addition to following up on feedback regarding the new system, its documentation, and processes from all product development 
+      participants through regular designer conversations and workshops, product-development Slack channels, wiki page idea pools, etc., 
+      I started to draw up plans for the next year. This includes a Storybook integration MVP and the introduction of a more dynamic 
+      and automated color palette creation based on the OKLCH color namespace to enhance the elevation system of our UI components and 
+      speed up our component creation cycle.</p>
+    <p>
+      With the help of this new approach, we can begin creating alternate token sets to experiment with existing product brands and 
+      study significant modifications, such as accessibility enhancements. These variant research efforts will enable us to introduce 
+      our product to new markets, thanks to the flexibility of our Design System components.</p>
+    <p>My long-term goal is to create an ecosystem and culture where designers can craft highly personalized or at least geo-location 
+      agnostic components. This will enhance the user experience and increase the company's overall relevance in our key markets.</p>
+  </section>
+
+
+  <section>
+    <p class="read-more">
+      <a routerLink="/">
+        <span class="material-symbols-outlined">
+            keyboard_backspace
+        </span>
+        Back
+      </a>
+    </p>
+  </section>
 </article>

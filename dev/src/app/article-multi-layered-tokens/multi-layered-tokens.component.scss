@@ -1,7 +1,7 @@
 $grid-unit: 8px;
 
 section {
-    padding-top: $grid-unit * 5;
+    padding-top: $grid-unit * 8;
 
     @media (max-width: 840px) {
         padding-top: $grid-unit * 4;
@@ -25,7 +25,7 @@ h3 {
     font-weight: 600;
     font-size: 32px;
     line-height: 1.4em;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Bitter','Open Sans', sans-serif;
 
     @media (max-width: 840px) {
         font-size: 20px;
@@ -34,10 +34,10 @@ h3 {
 
 h4 {
     margin: 0 0 $grid-unit * 2;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 24px;
     line-height: 1.2em;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Bitter', 'Open Sans', sans-serif;
 
     @media (max-width: 840px) {
         font-size: 18px;
@@ -58,6 +58,12 @@ p {
         color: #252525;
         text-decoration: none;
         box-shadow: inset 0 -1px 0 #9f9f9f;
+        transition: all linear 0.25s;
+
+        &:hover {
+            color: #000;
+            box-shadow: inset 0 -1px 0 #000;
+        }
     }
 
     &.read-more {
@@ -69,19 +75,36 @@ p {
                 box-shadow: inset 0 -1px 0 #000;
 
                 .material-symbols-outlined {
-                    left: -2px;
+                    left: $grid-unit * -0.25;
                 }
             }
 
             .material-symbols-outlined {
                 position: relative;
-                top: 2px;
+                top: $grid-unit * 0.25;
                 left: 0;
                 font-size: 18px;
                 transition: left ease 0.25s;
 
                 @media (max-width: 840px) {
                     font-size: 16px;
+                }
+            }
+        }
+
+        &.download {
+            a {
+                .material-symbols-outlined {
+                    top: $grid-unit * 0.25;
+                    left: 0;
+                    transition: top ease 0.25s;
+                }
+
+                &:hover {
+                    .material-symbols-outlined {
+                        top: $grid-unit * 0.5;
+                        left: 0;
+                    }
                 }
             }
         }
