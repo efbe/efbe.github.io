@@ -12,6 +12,11 @@ article {
     img {
         width: 100%; // responsive
         border: 1px solid #9f9f9f;
+    } 
+
+    p strong {
+        font-weight: 600;
+        letter-spacing: -0.02em;
     }
 }
 

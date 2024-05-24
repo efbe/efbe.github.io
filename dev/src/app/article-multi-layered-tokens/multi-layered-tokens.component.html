@@ -3,12 +3,12 @@
   <p>One of the main objectives of the Sportsbook Product Design Team was to redesign our 
     leading online betting brand for the Nordic market. With a user base known for its conservatism, 
     the goal was to modernize the user experience and elevate the brand's appeal.</p>
-  <p>To achieve this goal, we revamped our current color scheme logic and implemented a new design system 
+  <p><strong>To achieve this goal, we revamped our current color scheme logic and implemented a new design system 
     component building method, along with an enhanced design token structure. The new approach 
     and maintenance flow not only enable designers to directly integrate production code through Figma 
     and GitHub, resulting in a faster time to market, but also play a crucial role in theme and tone 
     switching within Figma. This allows us to experiment with and easily validate new design components 
-    across our different brands for various markets.</p>
+    across our different brands for various markets.</strong></p>
   <p>In this project, my role is to collaborate with the Principal UI Designer and Frontend Architect 
     to establish the key artifacts. Additionally, I am responsible for onboarding and co-leading the UI 
     Designers working on our Design System components.</p>
@@ -29,8 +29,8 @@
 
   <section>
     <h4>Design Token Architecture Enhancements</h4>
-    <p>With the introduction of unified tokens, our main goals were cost-effectiveness and flexibility. 
-      To simplify component creation and UI theming, we reduced the number of structural and surface-related 
+    <p><strong>With the introduction of unified tokens, our main goals were cost-effectiveness and flexibility.</strong></p> 
+    <p>To simplify component creation and UI theming, we reduced the number of structural and surface-related 
       tokens. For added flexibility, which is often requested by our B2B partners, we increased brand-level 
       properties, including so-called "product" background and complementary text colors, border radii, 
       and richer typographical elements.</p>
@@ -52,6 +52,8 @@
     <p>Originally, our products used a single tone for surface colors—either light or dark neutrals with the corresponding 
       text colors, along with their respective brand colors. However, this new token structure has enabled us to support 
       duo-tone themes.</p>
+      <p><strong>Light and dark theme support has become a standard requirement in user interface design. To meet user needs 
+        and perform well in our target markets, we had to establish a new color system.</strong></p>
       <p>We introduced a mirroring logic for the surface colors, consisting of 5 shades each from a 20-step generated palette, 
         with an additional shared color that connects the light and dark tones for certain components. All colors from this 
         palette are added to the tokens at the brand level to preserve each step along with the logic between them. 
@@ -66,10 +68,9 @@
 
   <section>
     <h4>Redesigning Components with the New Token Set</h4>
-    <p>We began field testing these new color tokens by redesigning a handful of our most common UI components. 
+    <p><strong>We began field testing these new color tokens by redesigning a handful of our most common UI components. 
       This allowed us to assess the flexibility of the custom properties and observe how quickly the Token Studio plugin 
-      renders updates across different brands and tones at various atomic levels. Don't forget that we did not have 
-      native Figma Variable support at that time.</p>
+      renders updates across different brands and tones at various atomic levels.</strong></p>
     <img src="assets/redesigned-components.jpg" alt="Redesigned components in the organism" />
     <p>In the tab component, the new border radius token, along with smarter usage and reduction of surface colors, provides 
       more emphasis on the content. The new system of text and surface colors allowed us to remove the brand color from the 
@@ -81,21 +82,23 @@
     <p>In case of the event result selector, the new border radius token and smaller gaps between the buttons led to better 
       cohesion within an event's selections. With the reduction of the dimension tokens, the selection buttons now use a 
       standardized height instead of a custom value.</p>
+    <p>Based on these examples, we began building on our existing Design System, revisiting components with the new tokens 
+      to support a duo-tone appearance and an updated overall design.</p>
   </section>
 
   <section>
     <h4>From Design to Code</h4>
-    <p>Once I confirmed that the components worked as expected in Figma, I presented the proof of concept to our key stakeholders, 
+    <p>Once we confirmed that the components worked as expected in Figma, we presented the proof of concept to our key stakeholders, 
       UI team members, and Frontend Architects. Together, we began setting up the deployment part of the token pipeline.</p>
     <img src="assets/token-pipeline.jpg" alt="Design Token Pipeline from Figma to Production code" />
     <p>After the resolver was in place to translate our design tokens to CSS variables in the production code, we rolled out our very 
       first token set to the aforementioned Nordic brand in March 2024. The plan for this year is to continue with the rest of 
       our brands, which means more than 15 individual themes, along with their light and dark variants.</p>
    
-    <p>Regarding our Figma components, we began building on our existing Design System, redefining components with the new tokens 
-      to support the duo-tone appearance. Since we previously didn't have a standardized handover process, I suggested extending 
-      the scope of this project to include the standardization of our visual handovers to developers, product owners, and quality 
-      assurance personnel. To achieve this, I began experimenting with the 
+    <p><strong>Since we previously didn't have a standardized handover process, I suggested extending the scope of this project to 
+      include the standardization of our visual handovers to developers, product owners, and quality assurance personnel in order to 
+      streamline the end-to-end development process.</strong></p>
+    <p>To achieve this, I began experimenting with the 
       <a href="https://www.figma.com/community/plugin/1205622541257680763/eightshapes-specs" target="_blank">EightShapes Specs plugin</a> 
       developed by Nathan Curtis, creating complex UI component specs along with all available variants of their subatomic particles.</p>
     <img src="assets/component-specs.jpg" alt="Component Specs for the Main Navigation" />
@@ -107,6 +110,8 @@
 
   <section>
     <h4>Plans for the Future</h4>
+    <p><strong>My long-term goal is to create an ecosystem and culture where designers can craft highly personalized or at least geo-location 
+      agnostic components. This will enhance the user experience and increase the company's overall relevance in our key markets.</strong>
     <p>With the new token architecture and color system, the UI design team is technically ready to upgrade our existing components and 
       craft new ones as requested by our product backlog. In the upcoming months, we need to agree on a token documentation format 
       with the Front End developers and Product Owners. Additionally, since the number of component upgrade requests has increased 
@@ -117,12 +122,10 @@
       I started to draw up plans for the next year. This includes a Storybook integration MVP and the introduction of a more dynamic 
       and automated color palette creation based on the OKLCH color namespace to enhance the elevation system of our UI components and 
       speed up our component creation cycle.</p>
-    <p>
-      With the help of this new approach, we can begin creating alternate token sets to experiment with existing product brands and 
-      study significant modifications, such as accessibility enhancements. These variant research efforts will enable us to introduce 
-      our product to new markets, thanks to the flexibility of our Design System components.</p>
-    <p>My long-term goal is to create an ecosystem and culture where designers can craft highly personalized or at least geo-location 
-      agnostic components. This will enhance the user experience and increase the company's overall relevance in our key markets.</p>
+    <p>With the help of this new approach, we can begin creating alternate token sets to experiment with existing product brands and 
+      study significant modifications, such as accessibility enhancements.</p>
+    <p><strong>This new component-building method will enable us to increase our competitiveness in current markets and introduce our 
+      product to new markets, thanks to the flexibility of our Design System components.</strong></p>
   </section>
 
 
